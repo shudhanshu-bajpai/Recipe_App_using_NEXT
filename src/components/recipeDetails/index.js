@@ -22,26 +22,26 @@ const RecipeDetails = ({ data }) => {
             alt=""
             width={200}
             height={200}
-            className="ml-20 w-80 h-full rounded-md"
+            className="ml-20 w-80 h-full rounded-lg"
           />
         </div>
         <div className="h-3/4 w-1/2">
           <p className="text-3xl font-semibold mb-3">Ingredients :</p>
-          <ul className="grid grid-cols-3">
+          <ol className="ml-5 list-disc grid grid-cols-3">
             {data.ingredients.map((i, index) => (
               <li key={index} className="text-lg">
                 {i}
               </li>
             ))}
-          </ul>
+          </ol>
           <p className="text-3xl font-semibold mb-3">Instructions :</p>
-          <ul>
+          <ol className="ml-5 list-decimal">
             {data.instructions.map((i, key) => (
               <li key={key} className="text-lg">
                 {i}
               </li>
             ))}
-          </ul>
+          </ol>
         </div>
         <div></div>
       </div>

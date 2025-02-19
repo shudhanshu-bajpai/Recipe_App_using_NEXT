@@ -27,7 +27,7 @@ const RecipesList = ({ recipes }) => {
                       alt={recipes.name}
                       width={250}
                       height={250}
-                      className="rounded-sm w-fit pt-4"
+                      className="rounded-lg w-fit pt-4"
                     />
                   </div>
 
